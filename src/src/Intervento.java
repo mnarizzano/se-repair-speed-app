@@ -6,6 +6,10 @@ public class Intervento {
     private StatoIntervento stato;
     private Date dataInizio;
     private Date dataFine;
+
+    /** Associations */
+    private RelazioneTecnica relazioneTecnica;
+    private Artigiano artigiano;
     
     public Intervento(int iD, Date dataInizio, Artigiano artigiano) {
 		super();
@@ -14,8 +18,7 @@ public class Intervento {
 		this.artigiano = artigiano;
 		stato = StatoIntervento.Open;
 	}
-    
-    
+        
 	public int getID() {
 		return ID;
 	}
@@ -53,10 +56,6 @@ public class Intervento {
 		this.artigiano = artigiano;
 	}
 
-
-	/** Associations */
-    private RelazioneTecnica relazioneTecnica;
-    private Artigiano artigiano;
     /**
      * Operation
      *
