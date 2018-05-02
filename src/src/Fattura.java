@@ -12,8 +12,6 @@ import java.util.Date;
 * La classe Fattura, memorizza le informazioni sulla Fattura.
 * 
 * @author mnarizzano
-*
-* @todo Non si parla delle tasse applicate (Ad esempio non si parla di iva?)
 *  
 */
 public class Fattura {
@@ -22,7 +20,7 @@ public class Fattura {
     private int           numero;            // numero progressivo Fattura
     private int           piva;              // Partita Iva 
     private Date          data;              // Data di Emissione della Fattura
-    private double        importo;           // Importo della fattura
+    private double        importo;           // Importo della fattura al netto delle tasse.
     
     /**
     * Costruisce una Fattura con tutti i parametri assegnati e ritorna un oggetto Fattura.
@@ -114,16 +112,16 @@ public class Fattura {
 	}
 
 	/**
-	 * Importo totale della fattura, già comprensivo delle tasse calcolate.
-	 * @return importo totale della fattura.
+	 * Importo della fattura al netto delle tasse.
+	 * @return importo della fattura al netto delle tasse.
 	 */
 	public double getImporto() {
 		return importo;
 	}
 
 	/**
-	 * Importo totale della fattura, già comprensivo delle tasse calcolate.
-	 * @param importo totale della fattura.
+	 * Importo della fattura al netto delle tasse.
+	 * @param importo della fattura al netto delle tasse.	
 	 */
 	public void setImporto(double importo) {
 		this.importo = importo;
