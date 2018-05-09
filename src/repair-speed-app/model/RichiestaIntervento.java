@@ -1,19 +1,23 @@
+package model;
 import java.util.Date;
 
 public class RichiestaIntervento {
     /** Attributes */
     private int ID;
     private String datiCliente;
-    private String tipoIntervento;
+    private TipoArtigiano tipoIntervento;
     private Date data;
     private StatoRichiesta stato;
     /** Associations */
     private ProceduraPagamento proceduraPagamento;
     private Intervento intervento;
-  
-    public RichiestaIntervento(int iD, String datiCliente, String tipoIntervento, Date data) {
+
+    private static int numeroIntervento = 0;
+    
+    public RichiestaIntervento(String datiCliente, TipoArtigiano tipoIntervento, Date data) {
 		super();
-		ID = iD;
+		numeroIntervento++;
+		ID = numeroIntervento;
 		this.datiCliente = datiCliente;
 		this.tipoIntervento = tipoIntervento;
 		this.data = data;
@@ -41,12 +45,12 @@ public class RichiestaIntervento {
 	}
 
 
-	public String getTipoIntervento() {
+	public TipoArtigiano getTipoIntervento() {
 		return tipoIntervento;
 	}
 
 
-	public void setTipoIntervento(String tipoIntervento) {
+	public void setTipoIntervento(TipoArtigiano tipoIntervento) {
 		this.tipoIntervento = tipoIntervento;
 	}
 
@@ -85,7 +89,11 @@ public class RichiestaIntervento {
 		return intervento;
 	}
 
-
+	public Intervento creaIntervento(Date date, Artigiano a){
+		this.intervento = new Intervento(date,a);
+		return getIntervento();
+	}
+	
 	public void setIntervento(Intervento intervento) {
 		this.intervento = intervento;
 	}

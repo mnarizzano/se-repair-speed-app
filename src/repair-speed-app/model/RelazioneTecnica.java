@@ -1,3 +1,4 @@
+package model;
 
 public class RelazioneTecnica {
     /** Attributes */
@@ -5,14 +6,15 @@ public class RelazioneTecnica {
     private String relazione;
     private String materiale;
 
+    private static int numRelazioni = 0;
     
     
-    
-    
-    public RelazioneTecnica(int iD) {
-		super();
-		ID = iD;
-	}
+    public RelazioneTecnica(String relazione, String materiale){
+    	this.numRelazioni++;
+    	ID = numRelazioni;
+    	this.setMateriale(materiale);
+    	this.setRelazione(relazione);
+    }
 
 	public int getID() {
 		return ID;

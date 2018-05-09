@@ -1,85 +1,125 @@
+package model;
+/*
+ * Sistema
+ * 
+ * versione 1.0
+ * 
+ * Licence <a href="http://www.wtfpl.net"> WTFPL</a>
+ */
+
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Sistema {
 
     private String datiAzienda;
+    private String piva;
 
     /** Associations */
-    private Artigiano[] artigiani;
-    private RichiestaIntervento[] richieste;
+    private ArrayList< Artigiano >           artigiani;
+    private ArrayList< RichiestaIntervento > richieste;
+     
     
     /**
-     * In input prende una data e un tipo di artigiano e restituisce il primo artigiano
-     * di quel tipo libero. Assumiamo che le giornate siano divise in periodi a tempo fissato. 
-     * Quindi se la data di inizio di un intervento non è stata ancora  occupata
-     * allora si assume l'artigiano libero.
-     * 
-     * @param d data in cui si vuole cercare una disponibilità
-     * @param t tipo di artigiano
-     * @return null se non ci sono artigiani disponibili, altrimenti un artigiano-
+     * Default constructor. Creo due liste, una di artigiani, e un altra di richieste
      */
-    public Artigiano getArtigianoDisponibile(Date d, TipoArtigiano t){
-    	/* Creiamo una listaArtigiani (scorrendo la lista con tutti gli artigiani) contenente 
-    	 * tutti gli artigiani di tipo t.
-    	*/
-    	ArrayList<Artigiano> listaArtigiani = new ArrayList<Artigiano>();	
-    	for (Artigiano a:artigiani){
-    		if (a.getTipoArtigiano() == t){
-    			listaArtigiani.add(a);
-    		}
-    	}
-    	/* Per ogni Artigiano di tipo t (in listaArtigiani) creiamo la lista delle sue  indisponibilità.
-    	 * Poi scorriamo la lista delle indisponibilità per vedere se nella data d in cui vogliamo
-    	 * effettuare un intervento l'artigiano è già occupato. Nel caso sia occupato, viene iterato il prossimo artigiano.
-    	 * in caso contrario viene ritornato l'artigiano.
-    	 */
-    	for (Artigiano a:listaArtigiani){
-    		ArrayList<Date> indisponibili = getIndisponibilita(a);
-    		boolean disponibile = true;
-    		for(Date i:indisponibili){
-    			if (i.compareTo(d) == 0){
-    				disponibile = false;
-    				break;
-    			}			
-    		}
-    		if (disponibile) {return a;}
-    	}    
-    	/*Arrivati a questo punto nessun artigiano è stato trovato.*/
-    	return null;
-    }	
-    /* Dato un artigiano in input, l'algoritmo 
-     * scorre la lista delle richieste di intervento 
-     * e aggiunge al set la data di ogni intervento che deve
-     * essere effettuato dall'artigiano.
-     *
-     */
-    private ArrayList<Date> getIndisponibilita(Artigiano a){	
-    	ArrayList<Date> indisponibilita = new ArrayList<Date>();
-    	for (RichiestaIntervento r:richieste){
-    		if (a.getID() == r.getIntervento().getArtigiano().getID()) {	
-    			indisponibilita.add(r.getIntervento().getDataInizio());
-    		}
-    	}
-    	return indisponibilita;
-	}
+   	public Sistema(String dati, String piva){
+   		
+   		this.datiAzienda = dati;
+   		this.piva = piva;
+   		this.artigiani = new ArrayList< Artigiano >();
+   		this.richieste = new ArrayList< RichiestaIntervento >();
+   	}
+    
     /**
-     * Operation
+     * Operation Add Richiesta, aggiunge una richiesta di intervento alla lista di richieste.
      *
      * @param richiesta
      */
-    public void sottomettiRichiesta ( RichiestaIntervento richiesta ) {
-
+    public void addRichiesta( RichiestaIntervento richiesta ) {
+    	this.richieste.add(richiesta);
+    }
+    
+    /**
+     * Operation Get Lista di richieste
+     * 
+     * @return Richiesta di Intervento
+     */
+    public ArrayList< RichiestaIntervento >getRichieste(  ) {
+    	return richieste;
     }
   
     /**
-     * Operation
+     * Operation Ritorna un artigiano
+     * @param id dell'artigiano
+     * @return un Artigiano se trova un artigiano con lo stesso id, null altrimenti
+     *      */
+    public Artigiano getArtigiano(int id ) {
+    	for(Artigiano a : this.artigiani) 
+    	    if(a.getId() == id) return a;
+    	return null;
+    }
+    
+    /**
+     * Controlla la disponibilità di tutti gli Artigiani di un determinato tipo
+     * e ritorna il primo artigiano libero in quella data.
      *
-     * @return RichiestaIntervento[]
+     * @param data giorno di cui si deve effettuare l'intervento.
+     * @param tipoArtigiano tipo di artigiano di cui si vuol vedere la disponibilità
+     * {@see TipoArtigiano}
+     * @return il primo artigiano libero che può effettuare l'intervento.
+     * null se non ci sono artigiani disponibili in quella data.
      */
-    public RichiestaIntervento[] visualizzaRichieste (  )
-    {
-    	return richieste;
+    public Artigiano disponibilità ( Date data, TipoArtigiano tipoArtigiano ) {
+        
+    	for(Artigiano a:artigiani){
+    		if (a.getTipoArtigiano()==tipoArtigiano){
+    			/*Costruisco un array di date in cui l'artigiano non è disponibile.*/
+    			ArrayList<Date> indisponibile = getIndisponibilita(a);
+    			boolean disponibile = true; // Artigiano disponibile fino a prova contraria.
+    			/*Per ogni data in cui l'artigiano è indisponibile controllo se coincide con la 
+    			 * data in cui vorrei schedulare l'intervento.
+    			 */
+    			for(Date d:indisponibile){
+    				if (data.compareTo(d) == 0) {
+    					disponibile=false;
+    					break;
+    				}
+    			}
+    			if (disponibile) {
+    				return a;
+    			}
+    		}
+    	}	
+    	return null;
+    }
+
+    private ArrayList<Date> getIndisponibilita(Artigiano a) {
+    	ArrayList<Date> indisponibile = new ArrayList<Date>();
+    	for (RichiestaIntervento r:richieste){
+    		if(r.getIntervento().getArtigiano().getId() == a.getId()){
+    			indisponibile.add(r.getIntervento().getDataInizio());
+    		}
+    	}
+    	return indisponibile;
+    }
+    
+    
+    public Artigiano creaArtigiano(String datiArtigiano, TipoArtigiano tipoArtigiano, double costoH) {
+    	try{	
+    		Artigiano a = new Artigiano(datiArtigiano,tipoArtigiano,costoH);
+    		this.artigiani.add(a);
+    		return a	;
+    	} catch (Exception exp){
+    	}
+    	return null;
+    }
+    
+
+    public RichiestaIntervento creaRichiesta(String datiArtigiano, TipoArtigiano tipo, Date data) {
+    	RichiestaIntervento r = new RichiestaIntervento("Mario Rossi",tipo,data);
+    	this.richieste.add(r);
+    	return r	;
     }
     /**
      * Operation

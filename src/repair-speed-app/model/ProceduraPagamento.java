@@ -1,3 +1,4 @@
+package model;
 import java.util.Date;
 
 public class ProceduraPagamento {
@@ -59,9 +60,7 @@ public class ProceduraPagamento {
      * @return Fattura
      */
     public Fattura creaFattura ( int tot, Date  data,String datiCliente ) {
-    	numFattura++;
-		fattura = new Fattura(numFattura, Integer.parseInt(datiCliente),data, tot);
-		return fattura;
+    	return null;
     }
    
 }

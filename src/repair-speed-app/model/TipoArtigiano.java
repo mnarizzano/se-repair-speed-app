@@ -1,6 +1,9 @@
+package model;
 
 public enum TipoArtigiano {
 	Idraulico,
 	Carpentiere,
-	Elettricista
+	Elettricista,
+	Falegname,
+	Fabbro
 }

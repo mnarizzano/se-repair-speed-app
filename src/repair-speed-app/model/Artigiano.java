@@ -1,3 +1,4 @@
+package model;
 /*
  * Artigiano
  * 
@@ -11,11 +12,7 @@ import java.util.Date;
 /**
  * La classe Artigiano, memorizza le informazioni sull'Artigiano e il tipo di Artigiano
  * 
- * @author se-17-user
- *
- */
-/**
- * @author se-17-user
+ * @author mnarizzano
  *
  */
 public class Artigiano {
@@ -46,11 +43,11 @@ public class Artigiano {
 			throw new RuntimeException("INVALID Costo Orario, numero < o = a 0!");
 		}
 		this.costoH = costoH;
-		if(this.numeroArtigiani == Integer.MAX_VALUE){
+		if(Artigiano.numeroArtigiani == Integer.MAX_VALUE){
 			throw new NumeroArtigianiMassimoException("Numero Artigiani massimo raggiunto!");
 		}
-		this.numeroArtigiani++;
-		this.id = this.numeroArtigiani;   
+		Artigiano.numeroArtigiani++;
+		this.id = Artigiano.numeroArtigiani;   
     }
     /**
      * Id è un numero univoco maggiore di 0, e minore di Integer.MAX_VALUE, che viene 
