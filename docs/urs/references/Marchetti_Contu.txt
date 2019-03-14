@@ -1,0 +1,34 @@
+STAKEHOLDERS
+
+SEGRETARIA
+
+-Come si fa a capire il livello d'urgenza di un intervento?
+-Cosa succede se il cliente non è in casa il giorno dell'appuntamento?
+-Come viene gestita l'assegnazione di mezzi e strumenti aziendali ai vari artigiani?
+-Come viene gestito il pagamento da parte dei clienti?
+-Che durata e tipologia ha la garanzia dei vari interventi?
+
+ARTIGIANO
+
+-Se la segretaria sbaglia il tempo necessario per eseguire il lavoro, come gestisce una eventuale sovrapposizione?
+-Se l'intervento non va a buon fine, cosa succede?
+
+CLIENTE
+
+-Qual è il metodo di pagamento che preferisce?
+-Suggerimento per migliorare l'efficienza del servizio...
+
+PADRONE AZIENDA
+
+-Che fiducia ha riguardo alla conoscenza informatica dei suoi dipendenti?
+
+AMMINISTRATIVO
+
+-Quali sono i suoi compiti?
+-Quali sono i dati utilizzati per la fattura?
+-Ogni quanto vengono consegnate le relazioni riguardanti gli interventi?
+-Come monitora il pagamento?
+-Che tipologia di tecnologie informative sta attualmente utilizzando nel suo lavoro?
+-In che modalità viene sollecitato il pagamento?
+
+
