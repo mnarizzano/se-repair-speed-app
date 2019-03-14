@@ -14,3 +14,13 @@ Domande per cliente:
 1. Ci sceglierebbe di nuovo per lavori futuri?
 
 2. E' soddisfatto dalla tipologia di pagamento?
+
+Domande per cliente (padrone): 
+1. Cosa risolverebbe l'introduzione di un sistema informatico nella sua azienda?
+
+Domande per amministrativo:
+1. Quali sono i dati utilizzati per la fattura?
+
+2. A quando risalgono le ultime fatture conservate?
+
+
