@@ -11,8 +11,8 @@ Esercizio1:
 
 2) Completare il documento aggiungendo un file di testo contenente:
 
-   (i) domande per gli stakeholder (completare quelli che ci sono e aggiungere quelle che ci sono)
+   (i) domande per gli stakeholder (completare quelli che ci sono e aggiungere quelle che non ci sono)
 
-   (ii) Completare i questionari
+   (ii) Completare/Creare i questionari 
 
    (iii) Trovare un'applicazione inerente al progetto e analizzarne le funzionalità
