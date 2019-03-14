@@ -1,5 +1,5 @@
 Esercizio di Software Engineering 80154.
 
-Anno accademico 2017/2018.
+Anno accademico 2018/2019.
 
-Ditta Riparazioni Veloci
+Esercizio su Repair Speed-App
