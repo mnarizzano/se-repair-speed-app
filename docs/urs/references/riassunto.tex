@@ -1,0 +1,198 @@
+\documentclass[11pt]{article}
+\topmargin -.5in
+\textheight 9in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\textwidth 7in
+\usepackage{xcolor}
+\usepackage{hyperref}
+\newcommand{\rosso}[1]{\color[rgb]{1,0,0}{#1}}
+\newcommand{\blu}[1]{\color[rgb]{0,0,1}{#1}}
+\newcommand{\bianco}[1]{\color[rgb]{1,1,1}{#1}}
+\newcommand{\verde}[1]{\color[rgb]{0,0.65,0.31}{#1}}
+\newcommand{\giallo}[1]{\color[rgb]{0.96,0.67,0}{#1}}
+\newcommand{\nero}[1]{\color[rgb]{0,0,0}{#1}}
+
+
+
+\begin{document}
+
+% ========== Edit your name here
+\author{}
+\title{Report di un primo briefing sul progetto Repair Speed-App}
+\maketitle
+
+\section{Contesto}
+Una piccola ditta esegue interventi di riparazione per la casa:
+piccoli interventi di manutenzione elettrica, piccoli interventi di
+idraulica e carpenteria (riparazione di mobili, pareti in
+legno/cartongesso). Ha diversi dipendenti: Una segretaria, un
+amministrativo, circa 30 artigiani suddivisi in idraulici,
+elettricisti e carpentieri.
+%%
+Il flusso di lavoro della ditta \`e il seguente: Un cliente chiama la
+segretaria e spiega il problema. La segretaria innanzi tutto apre
+una nuova richiesta di intervento (un foglio prestampato), registra
+i dati del cliente, parlando con il cliente individua il problema, e
+sceglie il tipo di artigiano che si pu\`o occupare del problema, e
+infine individua delle possibili date per eseguire il lavoro.  Se il
+cliente accetta, sceglie il giorno e l'ora e la segretaria finalizza
+il foglio. Chiusa la telefonata registra l'intervento da effettuare.
+
+%%
+L'artigiano ogni mattina prende il foglio dove sono descritti gli
+interventi che deve effettuare e si reca a domicilio per il risolvere
+il problema.
+%%
+Al termine di ogni intervento l'artigiano deve compilare un rapperto
+descrivendo l'intervento e aggiungendo le spese effettuate e il tempo
+necessario  a risolvere il problema.
+%%
+Ottenuta la relazione attestante l'avvenuta riparazione, un
+amministrativo compila la fattura con i dati del cliente e la
+spedisce, monitorando il pagamento e laddove necessario sollecitando
+il pagamento.
+%%
+
+ Il cliente, il proprietario della ditta, sostiene che la gestione
+ cartacea \`e molto onerosa e macchinosa. Vorrebbe un sistema
+ informatico che snellisse le procedure eliminando (quasi)
+ completamente la carta.
+
+\section{Concetti Generali}
+
+\subsection{Stakeholders}:
+In questa sezione vengono descritti gli stakeholders, chi sono e quali
+sono gli obiettivi.
+
+\begin{itemize}
+\item Cliente (Padrone Azienda),
+\item Segretaria,
+\item Amministrativo,
+\item Artigiano(Elettricista, Idraulico, Falegname),
+\item Cliente.
+\end{itemize}
+
+\subsection{Campioni}
+In questa sottosezione inseriamo i dati dei campioni da intervistare.
+Il Proprietario, La Segretaria, L'Amministrativo,
+ L'Idraulico, un cliente vecchio.....
+
+ \subsection{Tecniche}
+In questa sezione descriviamo le tecniche che si adotteranno. Le
+tecniche verranno poi approfondite nelle prossime sezioni.
+\begin{itemize}
+\item Interviste mirate a campioni di ogni stakeholder.
+\item Questionario Anonimo, a risposta multipla, con poche domande e
+  al pi\`u 5 risposte. Non pi\`u di  prodotti concorrenti
+\end{itemize}  
+%% \subsection{Requisiti iniziali}
+%% \begin{itemize}
+%%   \item[] La segretaria deve Compilare un \textsl{Preventivo per una Richiesta di Intervento}
+%%   \item[] La segretaria deve Compilare una \textsl{Richiesta di Intervento} 
+%%   \item[] La segretaria deve Gestire le agende degli artigiani
+%%   \item[] L'artigiano deve poter gestire la sua agenda
+%%   \item[] L'artigiano deve poter chiudere una Richiesta di intervento
+%%   \item[] L'artigiano deve poter compilare  un rapporto per ogni intervento effettuato
+%%   \item[] .....
+%%   \item[]   
+%%   \end{itemize}
+
+\section{Tecniche di Elicitation: Interviste}
+In questa sezione elenchiamo alcune domande che vorremmo sottoporre ai
+vari stakeholder. Sono divise in sezioni, ed ogni sezione racchiude le
+domande per un gruppo di persone (stakeholder).
+
+\subsection{Domande per \blu{Segretaria}}
+\begin{enumerate}
+\item \nero{Quali sono i tuoi compiti?}
+\item \nero{Che cos'è una richiesta d'intervento?}
+\item \nero{Quali sono i dati del cliente? I dati della richiesta?}
+\item \nero{Come fai a capire il tipo di intervento?}
+\item \nero{Come si conclude la richiesta di intervento?}
+\item \nero{Il cliente deve rispondere subito?}
+\item \nero{Se il cliente accetta cosa succede?}
+\item \nero{Se il cliente concorda una data cosa succede?}
+\item \nero{Esiste un tempo minimo e uno massimo di intervento?}
+\item \nero{Quali sono i tuoi problemi in queste procedure?}
+\item \nero{Perch\`e il capire il tipo di intervento \`e un problema?}
+\item \nero{Parlami della gestione dell'agenda, come viene fatta?}
+\item \nero{Ma per chi sono i fogli dell'agenda?}
+\item \nero{Come vengono allocati gli interventi? Come si fanno a
+  evitare sovrapposizioni? Quanto pu\`o durare un'intervento?}
+\item \nero{Che differenza c'\`e tra un intervento normale e uno d`urgenza?.}
+\item \nero{...}
+\end{enumerate}
+
+
+
+\subsection{Domande per \verde{Artigiano}}
+\begin{enumerate}
+\item \nero{Quali sono i tuoi compiti?}
+\item \nero{In cosa consiste un intervento?}
+\item \nero{Cosa succede se l'intervento ha bisogno di pezzi aggiuntivi?}
+\item \nero{Cosa succede se la lista preventiva dei pezzi non \`e esaustiva?}
+\item \nero{A quel punto se il pezzo \`e indispensabile?}
+\item \nero{E se il pezzo non fosse disponibile a magazzino e ci
+  volesse pi\`u tempo per arrivare?}
+\item \nero{Se l'intervento va a buon fine, cosa succede?}
+\item \nero{E che dati ci sono nella relazione?}
+\item \nero{...}
+\end{enumerate}
+
+
+\subsection{Domande per \rosso{Cliente} \nero{che apre una richiesta}}
+\begin{enumerate}
+\item \nero{\'E soddisfatto del servizio?}
+\item \nero{Quali sono i problemi che ha riscontrato?}
+\item \nero{\'E soddisfatto dei tempi del servizio?}
+\item \nero{...}
+\end{enumerate}
+
+
+
+\section{Tecniche di Elicitation: Questionario}
+In questa sezione dobbiamo elencare i tipi di questionario che si
+vogliono somministrare, indicando principalmente l'obiettivo e le
+domande/risposte. In particolare vogliamo perseguire due obiettivi:
+(i) capire il grado di alfabetizzazione informatica di tutti gli
+stakeholder e (ii) capire il grado di conoscenza dei problemi dei
+clienti.  Quindi prepariamo due questionari, ogni questionario deve
+avere tra le 5 e le 10 domande, e ogni domanda deve avere esattamente
+5 risposte, tra cui non lo so, e altro.
+
+\subsection{Questionario alfabetizzazione informatica}
+Il questionario ha come obiettivo quello di capire come i dipendenti
+dell'azienda si rapportano con il computer.  \`E diviso in due parti,
+nella prima ci sono domande di anagrafica (et\`a, Famiglia, possiedi
+pc), e una seconda parte domande a carattere generale sul PC (Qual'\`e
+il tuo grado di conoscenza di Office?)
+\href{http://www00.unibg.it/dati/bacheca/313/9143.pdf}{Esempio di Questionario}
+%% \begin{enumerate}
+%% \item
+%%   \begin{enumerate}
+%%   \item 
+%%   \end{enumerate}
+%% \end{enumerate}  
+
+
+\section{Valutazione di applicazioni equivalenti}
+In questa sezione descriviamo uno o pi\`u applicazioni che possono
+essere d'interesse e avere funzionalit\`a in comune con l'applicazione
+che si vuole sviluppare. In ogni sottosezione indicare il link e le
+funzionalit\`a spiegandone le caratteristiche.
+
+
+
+
+\end{document}
+
+
+
+Esercizion:
+
+1) Leggere e scaricare il primo report dal repository mnarizzano/repair-speed-app
+2) Completare il documento aggiungendo un file di testo contenente:
+(i) domande per gli stakeholder (completare quelli che ci sono e aggiungere quelle che ci sono)
+(ii) Completare i questionari
+(iii) Trovare un'applicazione inerente al progetto e analizzarne le funzionalit\`a
