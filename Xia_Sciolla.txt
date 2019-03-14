@@ -1,0 +1,81 @@
+Segretaria:
+1)Cosa succede se non ci sono artigiani da segnare alla richiesta dell'intervento?
+
+Cliente:
+1)gli piacerebbe prenotare un intervento tramite un applicazione?
+
+Artigiano:
+1)quanto dura un intervento in media?
+
+
+Stakeholder:
+1)dipendente del magazzino: come ricevono gli ordini dei pezzi da parte della ditta repair?
+
+
+Questionario1:
+1)Quanti anni ha?
+2)possiedi pc in casa?
+-no
+-si, solo uno
+-si, più di uno
+3)qual è la sua capacità di navigare in internet?
+-non lo so
+-altro
+-alto: sono in grado di fare ricerche incrociate
+-medio: sono in grado di cercare piccoli argomenti come le ricette online
+-basso: non sono in grado di navigare in internet
+4)Qual è il suo grado di conoscenza di Office?
+-nullo
+-basso: sono in grado di aprire documenti, ma non modificarli
+-medio: sono in grado di effettuare piccole modifiche ai documenti
+-alto: sono in grado di creare un documento da zero
+-non lo so
+5)Qual è il suo grado di familiarità con smartphone/tablet?
+-nullo
+-basso: lo utilizzo solo per effettuare chiamate e scrivere messaggi
+-medio: lo utilizzo per consultare applicazioni scaricate
+-alto: lo utilizzo come se fosse un computer
+-non lo so
+
+
+Questionario2:
+1)Quali sono i problemi più richiesti dai clienti?
+-non lo so
+-idraulici
+-elettrici
+-carpenteria
+-altro
+2)Quanto dura in media un intervento?
+-non lo so
+-quattro ore
+-una giornata
+-diverse giornate
+-altro
+3)Quale gruppo di lavoratori fanno parte i clienti che chiedono più spesso interventi?
+-non lo so
+-lavoratori full time
+-lavoratori part time
+-pensionati
+-altro
+4)Come valuta il grado di soddisfazione dei clienti?
+-non lo so
+-alto: tutti (o quasi) i clienti sono soddisfatti
+-medio: la maggior parte dei clienti è soddisfatta con diverse eccezioni
+-basso: la maggior parte dei clienti è insoddisfatta
+-altro
+
+
+
+software:
+https://www.openstamanager.com/
+permette la gestione dell'assistenza tecnica, con funzionalità di gestione delle fatture.
+E' disponibile nella dashboard un calendario degli interventi, ma esso non è condivisibile con i tecnici.
+E' possibile effettuare statistica sui clienti/fornitori/tecnici e tutti i dati sono salvati su cloud.
+La gestione degli interventi da parte dei tecnici può essere completata attraverso device come tablet.
+
+
+
+
+
+
+

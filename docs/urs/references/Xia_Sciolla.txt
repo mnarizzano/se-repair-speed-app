@@ -1,0 +1,19 @@
+Segretaria:
+1)Cosa succede se non ci sono artigiani da segnare alla richiesta dell'intervento?
+
+Cliente:
+1)gli piacerebbe prenotare un intervento tramite un applicazione?
+
+Artigiano:
+1)quanto dura un intervento in media?
+
+
+Stakeholder:
+1)dipendente del magazzino: come ricevono gli ordini dei pezzi da parte della ditta repair?
+
+
+Questionario1:
+1)Quanti anni ha?
+2)
+
+Questionario2:
