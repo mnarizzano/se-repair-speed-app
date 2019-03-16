@@ -1,0 +1,97 @@
+I) Domande per Segretaria:
+
+- Se il cliente ritira o vuole modificare l'intervento dopo aver acettato cosa fai?
+- Se l'Artigiano che doveva andare a fare un intervento è impossibilitato a presentarsi cosa dici al cliente? cosa succede con le modifiche sull'agenda e sull'ordine?
+- Quando non ci sei chi prende il tuo posto?
+
+Domande per l'Artigiano
+
+- Cosa fai se il cliente non si fa trovare?
+- Se l'intervento non va a buon fine cosa fai?
+- Quali possono essere i motivi per cui un intervento non va a buon fine?
+
+Domande per il Cliente
+
+- Il rapporto Qualità prezzo è adeguato?
+- Che voto daresti agli artigiani che hanno effettuato il lavoro?
+- Richiameresti quest'azienda in futuro? perchè?
+- Suggeriresti quest'azienda? 
+
+Domande Amministrazione
+
+- Come rilasciate le fatture?
+- Che informazioni contengono?
+- Come monitorate i pagamenti?
+- Come tenete traccia dei vecchi pagamenti?
+- Cosa succede in caso di ritardi o mancati pagamenti?
+- Avete un metodo preciso  da seguire nel processo di pagamento e registrazione?
+- Gli artigiani compilano sempre in modo adeguato i rapporti?
+- Nel caso di mancate informazioni come vi comportate?
+- Come gestite l'acquisto di nuovi pezzi, strumenti ecc...?
+
+II Questionari:
+
+Rispondere con valori da 1 a 5 dove:
+1)per niente/mai
+2)poco
+3)non lo so
+4)adeguato/abbastanza
+5)ottimo/molto
+
+1) Questionario:Alfabetizzazione informatica
+
+a)Quanto tempo spendi al computer durante il giorno? 1 2 3 4 5
+
+b)Quale è la tua conoscenza riguardo agli strumenti di scrittura sul pc? 1 2 3 4 5
+
+c)Quanto spesso navighi su internet? 1 2 3 4 5
+
+d)Quanto spesso usi la posta elettronica? 1 2 3 4 5
+
+e)Quale è la tua conoscenza del pacchetto office? 1 2 3 4 5
+
+f)Quanto ti trovi a tuo agio a lavorare al computer? 1 2 3 4 5
+
+g)che voto daresti alla tua abilità con il computer? 1 2 3 4 5
+
+2)Questionario: Conoscenza problemi clienti:
+
+Rispondere con valori da 1 a 5 dove:
+1)per niente/mai
+2)poco
+3)non lo so
+4)adeguato/abbastanza
+5)ottimo/molto
+
+
+a)Quanto spesso ricevi reclami dai clienti? 1 2 3 4 5
+
+b)In media quale è il grado di soddisfazione dei clienti? 1 2 3 4 5
+
+c)Quale ritieni sia il tuo grado di conoscenza riguardo il campo di lavoro degli artigiani? 1 2 3 4 5
+
+d)Quanto ti trovi a tuo agio a rispondere alle domande dei clienti sul tipo di lavoro? 1 2 3 4 5
+
+e)Quanto spesso ti capita di dover contattre un esperto per rispondere ai clienti? 1 2 3 4 5
+
+f)Quanto pensi che un sistema più informatizzato ti possa facilitare il lavoro? 1 2 3 4 5
+
+
+III Applicazione inerente e funzionalità
+
+https://dynamics.microsoft.com/it-it/
+Microsoft Dynamics 365
+
+funzionalità:
+
+1) Facilità la creazione di ordini attraverso interfacce guidate
+
+2) Permette la gestione degli artiginai nell'agenda in modo semplice
+
+3) Funzione di ottimizzazione automatica nell'assegnazione dei tecnici
+
+4) Permette la visibilità di tutti gli ordini e il loro stato di avanzamento
+
+5) Permette compilazione di report guidati
+
+6) Pagina personalizzata per le varie categorie di lavoratori
