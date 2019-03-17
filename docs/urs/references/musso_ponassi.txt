@@ -1,0 +1,108 @@
+Domande
+    Segretaria
+        Si può modificare data, artigiano o altri campi dell'intervento? Esiste già nel caso una procedura a riguardo?
+        Unica segretaria?
+        Come viene comunicato un intervento urgente?
+        Ci sono già domande precompilate per l'individuazione del tipo di intervento?
+        Come si riallocano gli interventi in caso di problemi?
+        per comunicare un cambiamento sull'intervento(data) da parte del cliente?
+
+    Artigiano
+        Se è l'artigiano sbagliato come ci si comporta? Si adebbita comunque la visione del problema? Come si rischedula?
+        Se l'intervento sta durando più del tempo previsto?
+        Se fosse richiesto un artigiano aggiuntivo (altro campo di competenze)?
+
+    Cliente 
+        quale è il metodo di pagamento utilizzabile preferito?
+
+    Amministrazione
+        Quali sono i metodi di pagamento disponibili al cliente?
+        Come viene monitorato il pagamento del cliente? dopo quanto vi è il sollecito?
+
+Questionari
+    Anagrafico
+        1. Quanti anni hai?
+            meno di 18
+            18-30
+            30-45
+            45-60
+            più di 60
+
+        2. Da quanti membri è composta la tua famiglia?
+            1
+            2
+            3
+            4
+            più di 4
+
+        3. Grado di istruzione
+            nessuno
+            licenza elementare
+            licenza media 
+            scuola superiore
+            università
+        
+        4. Anni di lavoro nell'azienda
+            meno di 1
+            1-3
+            3-6
+            6-10
+            più di 10
+        
+        5. Che tipo di contratto lavorativo hai?
+            nessuno
+            full-time
+            part-time
+            in proprio
+            altro
+        
+    
+    Informatico
+        1. hai un telefonino?
+            si, ma non uno smartphone
+            si, un iphone
+            si, un android
+            non lo so
+            altro
+
+        2. hai un computer?
+            non lo so
+            altro
+            sì, un fisso
+            si, un fisso autoassemblato
+            sì, un portatile
+
+        3. quante ore usi mediamente il computer al giorno?
+            meno di 1 ora
+            1-2 ore
+            2-4 ore
+            4-8 ore
+            più di 8
+
+        4. Quante ore al giorno usi il telefono?
+            meno di 1 ora
+            1-2 ore
+            2-3 ore
+            più di 3 ore
+            non lo so
+
+        5. In quali momenti della giornata usi di più il telefono?
+            in mattinata
+            di pomeriggio
+            di sera
+            durante i pasti
+            non lo so
+
+        6. Ogni quanto cambi dispositivi elettronici?
+            solo quando si rompono
+            ogni volta che esce il nuovo modello
+            ogni 2-3 anni
+            altro
+            non lo so
+
+Applicazioni equivalenti esistenti
+
+    ResourceGuru   -> employee scheduling software          (Employee side)
+    BookSteam      -> all-in-one online booking software    (Customer side)
+
+
