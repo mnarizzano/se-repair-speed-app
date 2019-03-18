@@ -1,0 +1,74 @@
+Segretaria:
+
+1) usi programmi come office?
+2) se usi office, qual'è il tuo livello di utilizzo?
+3) se non usi office, perchè (ti trovi male, non sai usarlo)?
+4) in base a cosa scegli l'artigiano?
+5) come decidi la priorità per ogni riparazione?
+6) se un artigiano fa male un intervento, e il cliente si lamenta, come gestisci la situazione?
+7) se un artigiano crea un danno al cliente, come viene gestista la situazione?
+
+Artigiano:
+
+1) come vieni contattato dalla segretaria?
+2) quanto tempo hai per risolvere l'intervento?
+3) se hai un tempo limite, cosa succede se non finisci in giornata?
+4) esattamente, in cosa consistono le spese effettuate (manodopera + ricambi)?
+5) se non hai un pezzo, e la riparazione è urgente, puoi acquistarlo da solo?
+6) cosa succede se non trovi il cliente?
+
+Cliente:
+
+1) come valuti il rapporto qualità-prezzo?
+2) cosa miglioreresti del servizio?
+3) sei soddisfatto del tempo impiegato dall'artigiano per arriavare (tempo per arrivare a casa tua) a risolvere il problema?
+4) sei soddisfatto del tempo impiegato dall'artigiano per risolvere il problema?
+5) sei soddisfatto del tempo che la segretaria ha impiegato a capire quale fosse il problema?
+6) l'amministrativo, ha impiegato poco tempo per inviare la fattura?
+7) dopo mesi dall'intervento hai riscontrato ancora lo stesso problema che avevi prima dell'intervento?
+8) la qualità dei pezzi è buona (non si sono rovinati dopo mesi dall'intervento)?
+
+Questionario:
+
+    Età
+      1) età > 70
+      2) 18 <= età < 35
+      3) 35 <= età < 50
+      4) 50 <= età < 70
+      5) non rispondo
+
+    Stato civile:
+       1) Sposato
+       2) Separato
+       3) Single
+       4) Convivnente
+       5) Non rispondo
+
+    Livello di istruzione:
+      1) elementari
+      2) medie
+      3) liceo
+      4) titolo universitario (compresi eventuali master)
+      5) nessun titolo
+
+    Quanti computer possiedi:
+       1) 1
+       2) 2
+       3) 3
+       4) 4
+       5) non rispondo
+
+    Quanto tempo passi davanti al computer (al giorno):
+       1) 30 minuti
+       2) 1 ora
+       3) 2 ore
+       4) > 3 ore
+       5) non rispondo
+
+    Qual'è il tuo livello di conoscenza informatica?
+       1) non so usare il computer
+       2) lo uso solo per guardare video, etc..
+       3) uso solo le funzioni di base per il mio lavoro (office livello base)
+       4) uso discretamente bene il computer per il mio lavoro (office livello buono)
+       5) faccio qualsiasi cosa al computer (office livello alto, compreso di certificazioni come ECDL)
+    
