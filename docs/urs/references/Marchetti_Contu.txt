@@ -32,3 +32,54 @@ AMMINISTRATIVO
 -In che modalità viene sollecitato il pagamento?
 
 
+QUESTIONARIO
+
+
+-Quanti anni hai?
+ meno di 20
+ tra 20 e 50
+ tra 50 e 70
+ più di 70
+ altro
+
+-Quanti dispositivi elettronici possiedi tra computer, tablet e cellulare?
+ nessuno
+ 1
+ 2
+ 3
+ più di 3
+ altro
+
+-Qual è il tuo livello di istruzione?
+ Diploma scuola primaria
+ Diploma scuola secondaria
+ Laurea triennale
+ Laurea magistrale
+ Altro
+
+-Quale sistema operativo conosci maggiormente?
+ Windows
+ MacOS/iOS
+ Linux
+ Android
+ Non lo so 
+
+-Grado di conoscenza pacchetto Office? (da 0 (non lo conosco) a 4(lo so usare bene))
+ 0
+ 1
+ 2
+ 3
+ 4
+ Non lo so
+
+-Livello di competenza nel navigare su internet? (da 0 (nessuna) a 4(molto bene))
+ 0 
+ 1 
+ 2
+ 3
+ 4
+ Non lo so 
+
+
+ 
+
