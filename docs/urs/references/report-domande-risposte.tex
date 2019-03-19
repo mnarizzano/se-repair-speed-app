@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+\topmargin -.5in
+\textheight 9in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\textwidth 7in
+\usepackage{xcolor}
+\usepackage{hyperref}
+\newcommand{\rosso}[1]{\color[rgb]{1,0,0}{#1}}
+\newcommand{\blu}[1]{\color[rgb]{0,0,1}{#1}}
+\newcommand{\bianco}[1]{\color[rgb]{1,1,1}{#1}}
+\newcommand{\verde}[1]{\color[rgb]{0,0.65,0.31}{#1}}
+\newcommand{\giallo}[1]{\color[rgb]{0.96,0.67,0}{#1}}
+\newcommand{\nero}[1]{\color[rgb]{0,0,0}{#1}}
+
+\newcommand{\dom}[1]{\item \color[rgb]{0,0,0}{#1}}
+\newcommand{\seg}[1]{\item[] \color[rgb]{0,0,1}{#1}}
+\newcommand{\art}[1]{\item[] \color[rgb]{0,0.65,0.31}{#1}}
+\newcommand{\cli}[1]{\item[] \color[rgb]{1,0,0}{#1}}
+\newcommand{\amm}[1]{\item[] \color[rgb]{0.96,0.67,0}{#1}}
+\newcommand{\capo}[1]{\item[] \color[rgb]{0,1,0}{#1}}
+
+\begin{document}
+
+% ========== Edit your name here
+\author{}
+\title{Report sulle interviste ai campioni}
+\maketitle
+
+\section{Descrizione dei campioni}
+In questa prima analisi abbiamo intervistato i seguenti campioni:
+\begin{itemize}
+\item Padrone Azienda .... 
+\item Segretaria,.....
+\item Amministrativo,....
+\item Artigiano(Elettricista, Idraulico, Falegname), ....
+\item Cliente, ... 
+\end{itemize}
+Seguendo la traccia delle domande viste nel documento di report del primo meeting. 
+
+\subsection{Intervista \blu{Segretaria}}
+\input{segretaria-domande-risposte.tex}
+
+\subsection{Intervista \verde{Artigiano}}
+\input{artigiano-domande-risposte.tex}
+
+\subsection{Intervista al \rosso{Cliente}}
+\input{cliente-domande-risposte.tex}
+
+\section{Intervista Amministrativo}
+\input{amministrazione-domande-risposte.tex}
+
+\section{Intervista al Capo dell'Azienda}
+\input{capoazienda-domande-risposte.tex}
+
+\end{document}
