@@ -13,7 +13,12 @@
 \newcommand{\giallo}[1]{\color[rgb]{0.96,0.67,0}{#1}}
 \newcommand{\nero}[1]{\color[rgb]{0,0,0}{#1}}
 
-
+\newcommand{\dom}[1]{\item \color[rgb]{0,0,0}{#1}}
+\newcommand{\seg}[1]{\item[] \color[rgb]{0,0,1}{#1}}
+\newcommand{\art}[1]{\item[] \color[rgb]{0,0.65,0.31}{#1}}
+\newcommand{\cli}[1]{\item[] \color[rgb]{1,0,0}{#1}}
+\newcommand{\amm}[1]{\item[] \color[rgb]{0.96,0.67,0}{#1}}
+\newcommand{\capo}[1]{\item[] \color[rgb]{0,1,0}{#1}}
 
 \begin{document}
 
@@ -105,52 +110,14 @@ vari stakeholder. Sono divise in sezioni, ed ogni sezione racchiude le
 domande per un gruppo di persone (stakeholder).
 
 \subsection{Domande per \blu{Segretaria}}
-\begin{enumerate}
-\item \nero{Quali sono i tuoi compiti?}
-\item \nero{Che cos'è una richiesta d'intervento?}
-\item \nero{Quali sono i dati del cliente? I dati della richiesta?}
-\item \nero{Come fai a capire il tipo di intervento?}
-\item \nero{Come si conclude la richiesta di intervento?}
-\item \nero{Il cliente deve rispondere subito?}
-\item \nero{Se il cliente accetta cosa succede?}
-\item \nero{Se il cliente concorda una data cosa succede?}
-\item \nero{Esiste un tempo minimo e uno massimo di intervento?}
-\item \nero{Quali sono i tuoi problemi in queste procedure?}
-\item \nero{Perch\`e il capire il tipo di intervento \`e un problema?}
-\item \nero{Parlami della gestione dell'agenda, come viene fatta?}
-\item \nero{Ma per chi sono i fogli dell'agenda?}
-\item \nero{Come vengono allocati gli interventi? Come si fanno a
-  evitare sovrapposizioni? Quanto pu\`o durare un'intervento?}
-\item \nero{Che differenza c'\`e tra un intervento normale e uno d`urgenza?.}
-\item \nero{...}
-\end{enumerate}
-
+\input{segretaria-domande-risposte.tex}
 
 
 \subsection{Domande per \verde{Artigiano}}
-\begin{enumerate}
-\item \nero{Quali sono i tuoi compiti?}
-\item \nero{In cosa consiste un intervento?}
-\item \nero{Cosa succede se l'intervento ha bisogno di pezzi aggiuntivi?}
-\item \nero{Cosa succede se la lista preventiva dei pezzi non \`e esaustiva?}
-\item \nero{A quel punto se il pezzo \`e indispensabile?}
-\item \nero{E se il pezzo non fosse disponibile a magazzino e ci
-  volesse pi\`u tempo per arrivare?}
-\item \nero{Se l'intervento va a buon fine, cosa succede?}
-\item \nero{E che dati ci sono nella relazione?}
-\item \nero{...}
-\end{enumerate}
-
+\input{artigiano-domande-risposte.tex}
 
 \subsection{Domande per \rosso{Cliente} \nero{che apre una richiesta}}
-\begin{enumerate}
-\item \nero{\'E soddisfatto del servizio?}
-\item \nero{Quali sono i problemi che ha riscontrato?}
-\item \nero{\'E soddisfatto dei tempi del servizio?}
-\item \nero{...}
-\end{enumerate}
-
-
+\input{cliente-domande-risposte.tex}
 
 \section{Tecniche di Elicitation: Questionario}
 In questa sezione dobbiamo elencare i tipi di questionario che si
