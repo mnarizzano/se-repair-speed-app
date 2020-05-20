@@ -24,3 +24,5 @@
 *.blg
 *-blx.aux
 *-blx.bib
+/src/repairSpeedApp/nbproject/private/
+/src/repairSpeedApp/dist/
